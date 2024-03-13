@@ -1,11 +1,25 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import TxtComponent from "./src/components/TxtComponent";
+import TxtComponent from "./src/components/TextoComponent";
+import HeaderComponent from "./src/components/HeaderComponent";
+import BuyComponent from "./src/components/header/LuaComponent";
+import LogInComponent from "./src/components/header/LogInComponent";
+import SingInComponent from "./src/components/header/EntrarComponent";
 
 export default function App() {
   return (
     <View style={styles.container}>
+      {/*  Componente Header */}
+      <HeaderComponent>
+        {/* Childrens  */}
+        <LogInComponent />
+        <SingInComponent />
+        <BuyComponent />
+      </HeaderComponent>
+
+      {/* Componente Texto */}
       <TxtComponent>
+        {/* Childrens */}
         <br />
         <Text>Número 1</Text>
         <br />
