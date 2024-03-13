@@ -6,6 +6,7 @@ const styles = StyleSheet.create({
     width: "100%",
     height: "100%",
     alignItems: "center",
+    justifyContent: "center"
   },
   containerHeader: {
     flexDirection: "row",
@@ -20,10 +21,12 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     marginLeft: 10,
     gap: 10,
+    marginTop: 500
+
   },
   image: {
-    width: 50,
-    height: 50,
+    width: 100,
+    height: 100,
   },
 });
 
